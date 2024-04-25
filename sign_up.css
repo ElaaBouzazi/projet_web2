@@ -1,0 +1,96 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #c4cecd, rgba(70, 120, 90, 0.7));
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+}
+
+.form-container {
+    background-color: #222;
+    width: 30%; /* Largeur du formulaire */
+    height: 500px; /* Hauteur du formulaire */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+
+.form-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url(back.jpg) no-repeat;
+    background-position: left bottom;
+    background-size: cover;
+    opacity: 0.8;
+}
+.login-container{
+    z-index: 5;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 65%;
+    transition: 0.3s ease;
+}
+
+.form-container .form-title{
+   color: #fff;
+   text-align: center;
+   font-size: 28px;
+}
+.form-container .form-holder {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 50px;
+    transition: 0.3s ease;
+    padding: 20px;
+}
+.form-container .form-holder input {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 0;
+    outline: none;
+    box-shadow: none;
+    display: block;
+    height: 25px;
+    padding: 8px 15px;
+    
+    width: calc(100% - 30px); /* Réduire la largeur de 30px pour les marges gauche et droite */
+    margin: 0 auto; /* Centrer les champs de saisie horizontalement */
+    border-bottom: 1px solid #eee;
+    font-size: 12px;
+}
+.form-container .form-holder input:last-child{
+    border-bottom: 0;
+}
+.form-container .form-holder input::placeholder{
+    color: rgba(0,0 , 0, 4);
+}
+.form-container .submit-btn{
+    background-color:  #63b28b;;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    width: 100%;
+    display: block;
+    padding: 15px 45px;
+    margin: 15px auto;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease; 
+}
+.form-container .submit-btn:hover{
+    background-color:rgba(70, 120, 90, 0.7);
+}
+
+
+
